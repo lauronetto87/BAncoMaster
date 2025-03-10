@@ -4,11 +4,7 @@ Projeto desenvolvido como parte do teste técnico do processo seletivo do banco 
 
 Problema - Dado um n número de conexões para viagens, a aplicação deverá indicar qual é o caminho mais barato para realizar essa viagem, independente do número de conexões.
 
-Solução - Criando dentro de Domain.Structures as estruturas de dados de nodos e grafos, foi possível implementar o algoritmo de Djikstra, que utiliza a iteração por cada nodo ou vértice do grafo, testando se utilizando a aresta ou ligação conseguirá um valor de caminho menor do que o inicial ou algum que já foi encontrado anteriormente.
-
-Após buscar a lista de locais relacionados aos pontos de partida e destino, nodos do grafo e o grafo são criados utilizando um motor.
-
-e um buscador específico para viagens (CheapestTravelFinder) inicia a sua busca pelo caminho mais barato.
+Após buscar a lista de locais relacionados aos pontos de partida e destino e um buscador específico para viagens (CheapestTravelFinder) inicia a sua busca pelo caminho mais barato.
 
 ## Viagens Padrão pré configuradas
 O readme fornecido para o teste consistia das seguintes viagens que deveriam estar pré configuradas
@@ -74,10 +70,6 @@ DELETE /api/travels/{travelId}
 - Asp.Net 6.0
 
 ## Bibliotecas Utilizadas
-
-- Awarean.Sdk.Result -> Biblioteca autoral para trabalhar com resultados de operações (Sucesso ou falha).
-- Awarean.Sdk.ValueObjects -> Biblioteca autoral para trabalhar com objetos de valor, abstraindo classicas validas (valor monetario positivo, por exemplo);
-- Awarean.Sdk.SharedKernel -> Biblioteca autoral contendo coisas comuns de projetos como interfaces para entidades, repositorios, serviços.
 
 - Microsoft.Extensions.DependencyInjection -> Usada para trabalhar o conceito de inversão de controle e injetar dependências automaticamente.
 - Microsoft.Extensions.Logging -> Usada para trabalhar adicionar Loggers no serviço (Não implementado atualmente, necessário configurar no Startup da API).
